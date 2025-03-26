@@ -16,7 +16,7 @@
             font-family: 'Poppins', sans-serif;
         }
         body {
-            background: #1b1f38;
+            background: #1b1f38; /* Deep Dark Blue */
             color: #ddd;
             text-align: center;
             padding: 50px;
@@ -24,14 +24,18 @@
         .container {
             max-width: 900px;
             margin: auto;
-            background: #252a48;
+            background: #252a48; /* Slightly lighter blue */
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .container:hover {
+            transform: scale(1.02);
         }
         h1 {
             font-size: 2.8em;
-            color: #ffcc00;
+            color: #ffcc00; /* Gold */
             font-weight: 600;
         }
         p {
@@ -43,9 +47,14 @@
         .section {
             margin-top: 30px;
             padding: 20px;
-            background: #2c3158;
+            background: #2c3158; /* Dark Blue Gray */
             border-radius: 10px;
             box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease-in-out;
+        }
+        .section:hover {
+            background: #33385f;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
         }
         h2 {
             font-size: 1.8em;
@@ -59,7 +68,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 10px;
+            gap: 15px;
             padding: 0;
         }
         .skills-list li {
@@ -74,6 +83,21 @@
             background: #ffcc00;
             color: black;
         }
+
+        /* Contact Section Styling */
+        .contact a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #ffffff; /* White color */
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s, transform 0.2s;
+        }
+        .contact a:hover {
+            color: #ffcc00; /* Golden color */
+            transform: scale(1.1);
+        }
+
         .button {
             display: inline-block;
             padding: 12px 20px;
@@ -97,8 +121,8 @@
             color: #bbb;
         }
 
-        /* 🌍 Responsive Design */
-        @media screen and (max-width: 768px) {
+        /* Responsive Design for Mobile */
+        @media (max-width: 768px) {
             body {
                 padding: 20px;
             }
@@ -108,18 +132,18 @@
             h1 {
                 font-size: 2.2em;
             }
-            h2 {
-                font-size: 1.5em;
+            p {
+                font-size: 1em;
             }
-            .skills-list {
-                flex-direction: column;
-                align-items: center;
+            .section {
+                padding: 15px;
             }
-            .skills-list li {
-                width: 90%;
-                text-align: center;
+            .button {
+                font-size: 1em;
+                padding: 10px 15px;
             }
         }
+
     </style>
 </head>
 <body>
@@ -166,7 +190,7 @@
        </div>
 
         <!-- Contact Section -->
-        <div class="section">
+        <div class="section contact">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:kritikapoudel1223@gmail.com">kritikapoudel1223@gmail.com</a></p>
             <p>GitHub: <a href="https://github.com/Kritika-Poudel" target="_blank">github.com/Kritika-Poudel</a></p>
