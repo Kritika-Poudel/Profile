@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kritika Poudel | Portfolio</title>
     <style>
-        /* General Page Styling */
+        /* General Styling */
         * {
             margin: 0;
             padding: 0;
@@ -47,6 +47,20 @@
             padding-bottom: 5px;
             margin-bottom: 15px;
         }
+        .skills-list {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            padding: 0;
+        }
+        .skills-list li {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
         .contact a, .github-link {
             display: inline-block;
             margin-top: 10px;
@@ -73,32 +87,71 @@
         .button:hover {
             background: #ffd700;
         }
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>Kritika Poudel</h1>
-        <p><strong>Biomedical Engineering Student</strong></p>
-        <p>Passionate about innovation in healthcare, robotics, and AI. Exploring biomaterials and their impact on medical technology.</p>
+        <p><strong>Biomedical Engineering Student | AI & Robotics Enthusiast</strong></p>
+        <p>Passionate about healthcare innovation, biomaterials, robotics, and artificial intelligence. Exploring the intersection of engineering and medicine to create impactful solutions.</p>
 
+        <!-- About Me Section -->
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am a Biomedical Engineering student with a deep interest in medical technologies, AI-driven healthcare solutions, and robotics. My goal is to contribute to cutting-edge innovations that improve patient care and medical accessibility.</p>
+        </div>
+
+        <!-- Education Section -->
         <div class="section">
             <h2>Education</h2>
             <p><strong>+2:</strong> Science at Shikshadeep College</p>
             <p><strong>Bachelor's:</strong> Biomedical Engineering at College of Biomedical Engineering and Applied Sciences</p>
         </div>
 
+        <!-- Skills Section -->
         <div class="section">
-            <h2>Project: PatanHelper</h2>
-            <p>An chatbot providing quick and easy access to hospital-related information, including services, doctors, and emergency contacts.</p>
-            <a href="https://github.com/Kritika-Poudel/PatanHelper" class="button" target="_blank">🔗 View Project on GitHub</a>
+            <h2>Skills & Expertise</h2>
+            <ul class="skills-list">
+                <li>Biomedical Engineering</li>
+                <li>Robotics</li>
+                <li>Artificial Intelligence</li>
+                <li>Python Programming</li>
+                <li>3D Modeling & Simulation</li>
+                <li>Mathematics & Problem Solving</li>
+                <li>Healthcare Technology</li>
+            </ul>
         </div>
 
+        <!-- Projects Section -->
+        <div class="section">
+            <h2>Projects</h2>
+
+            <h3>PatanHelper - Hospital Chatbot</h3>
+            <p>An AI-powered chatbot that provides quick and easy access to hospital-related information, including services, doctors, and emergency contacts.</p>
+            <a href="https://github.com/Kritika-Poudel/PatanHelper" class="button" target="_blank">🔗 View Project</a>
+
+            <h3>Robotics Club Projects</h3>
+            <p>Worked on multiple projects related to automation, robotic arms, and healthcare robotics in my university's Robotics Club.</p>
+        </div>
+
+        <!-- Contact Section -->
         <div class="section contact">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:kritikapoudel1223@gmail.com">kritikapoudel1223@gmail.com</a></p>
             <p>GitHub: <a href="https://github.com/Kritika-Poudel" target="_blank">github.com/Kritika-Poudel</a></p>
         </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 Kritika Poudel | All Rights Reserved</p>
+        </footer>
     </div>
 
 </body>
