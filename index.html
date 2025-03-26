@@ -5,61 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kritika Poudel | Portfolio</title>
     <style>
-        /* Google Font */
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-
         /* General Styling */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Arial', sans-serif;
         }
         body {
-            background: #f8f4e1; /* Soft Cream */
-            color: #333;
+            background: #E6F0FF; /* Light Blue Background */
+            color: #2A3D66; /* Dark Blue Text */
             text-align: center;
             padding: 50px;
         }
         .container {
             max-width: 900px;
             margin: auto;
-            background: white;
+            background: #E6F0FF; /* Light Blue Background */
             padding: 30px;
             border-radius: 15px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-            transition: transform 0.3s;
-        }
-        .container:hover {
-            transform: scale(1.02);
+            transition: transform 0.3s ease-in-out;
         }
         h1 {
-            font-size: 2.8em;
-            color: #2a4d69; /* Deep Blue */
-            font-weight: 600;
+            font-size: 2.5em;
+            color: #2A3D66;
         }
         p {
             font-size: 1.1em;
             margin-bottom: 15px;
             line-height: 1.6;
-            color: #555;
         }
         .section {
             margin-top: 30px;
             padding: 20px;
-            background: #f1e8d9; /* Light Beige */
+            background: #F8E8C8; /* Soft Golden Background */
             border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease-in-out;
-        }
-        .section:hover {
-            background: #ece2c6;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+            text-align: left;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
         h2 {
             font-size: 1.8em;
-            color: #2a4d69;
-            border-bottom: 2px solid #2a4d69;
+            border-bottom: 2px solid #2A3D66;
             padding-bottom: 5px;
             margin-bottom: 15px;
         }
@@ -72,50 +59,43 @@
             padding: 0;
         }
         .skills-list li {
-            background: #c6d8d3; /* Soft Greenish Blue */
-            color: #333;
+            background: #FFD580; /* Soft Gold */
             padding: 10px 15px;
             border-radius: 5px;
             font-weight: bold;
-            transition: background 0.3s;
-        }
-        .skills-list li:hover {
-            background: #2a4d69;
-            color: white;
         }
         .contact a, .github-link {
             display: inline-block;
             margin-top: 10px;
-            color: #2a4d69;
-            font-weight: bold;
+            color: #2A3D66;
             text-decoration: none;
-            transition: color 0.3s, transform 0.2s;
+            font-weight: bold;
+            transition: color 0.3s;
         }
         .contact a:hover, .github-link:hover {
-            color: #1d3557;
-            transform: scale(1.1);
+            color: #FFD580;
         }
         .button {
             display: inline-block;
             padding: 12px 20px;
-            background: #2a4d69;
-            color: white;
+            background: #FFD580; /* Golden Button */
+            color: #2A3D66;
             font-size: 1.2em;
             font-weight: bold;
-            border-radius: 8px;
+            border-radius: 5px;
             text-decoration: none;
             margin-top: 10px;
-            transition: background 0.3s, transform 0.3s;
+            transition: background 0.3s;
         }
         .button:hover {
-            background: #1d3557;
-            transform: scale(1.05);
+            background: #FFCC66;
         }
         footer {
             margin-top: 30px;
             padding: 15px;
-            font-size: 1em;
-            color: #666;
+            background: #DCE8F8; /* Slightly Darker Blue */
+            border-radius: 5px;
+            font-size: 0.9em;
         }
     </style>
 </head>
@@ -156,7 +136,6 @@
         <!-- Projects Section -->
         <div class="section">
             <h2>Projects</h2>
-
             <h3>PatanHelper - Hospital Chatbot</h3>
             <p>An AI-powered chatbot that provides quick and easy access to hospital-related information, including services, doctors, and emergency contacts.</p>
             <a href="https://github.com/Kritika-Poudel/PatanHelper" class="button" target="_blank">🔗 View Project</a>
